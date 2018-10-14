@@ -1,0 +1,10 @@
+name: myapp
+title:
+username:
+account: mary0523
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 513521
+bundleId: 1642410
+url: https://mary0523.shinyapps.io/myapp/
+when: 1539545364.62648
