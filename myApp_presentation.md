@@ -1,0 +1,58 @@
+Final Project for Developing Data Products
+========================================================
+author: Mary0523
+date: 10/14/2018
+autosize: true
+
+Introduction
+========================================================
+
+- This project contains two parts. This is the second part:
+use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+- Requirement:
+ 1. 5 slides to pitch our idea done in Slidify or Rstudio Presenter
+ 2. Your presentation pushed to github or Rpubs
+ 3. A link to your github or Rpubs presentation pasted into the provided text box
+
+App and R code
+========================================================
+This application is used to calculate due date for baby.
+Link for the application: https://mary0523.shinyapps.io/myapp/
+- The application requires entering:
+
+   1. the pregnancy women's first day of last menstrual period
+   2. the pregnancy women's average menstrual period cycle duration (default is 28 days)
+
+- Click on "Get my due date"
+
+- On the up right side of the website you will get the estimated due date
+
+The formula used by this application is adaped from [Naegele's rule][1]
+
+[1]:https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Naegele's_rule.html
+
+
+Formula used for due date calculation
+========================================================
+
+
+```r
+#First day of last menstrual period
+date1<-as.numeric(as.Date("2018-10-14",origin = "1970-01-01"))
+#Average cycle duration
+duration<-28
+#Estimated due date
+as.Date(date1+(273-21+duration),origin = "1970-01-01")
+```
+
+```
+[1] "2019-07-21"
+```
+
+Thank you for watching!!
+========================================================
+
+Link to R code for the application and this presentation is on github:
+
+https://github.com/Mary0523/Developing-Data-Products-Assignment4
